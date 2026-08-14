@@ -2,6 +2,7 @@
 
 int	ft_strlen(char *str);
 char	*ft_strcpy(char *dest, char *src);
+int	ft_strcmp(char *s1, char *s2);
 
 int	main(void)
 {
@@ -12,6 +13,9 @@ int	main(void)
 	//ft_strcpy
 	char *src = "Hello World";
 	char dest[20];
+	//ft_strcmp
+	char *s1 = "Hello!";
+	char *s2 = "Help!";
 	
 	printf("\n--ft_strlen--\n\n");
 	printf("1 - Testing Normal String : Hello World\n");
@@ -25,6 +29,8 @@ int	main(void)
 	ft_strcpy(dest, src);
 	printf("The Source String is : %s\n", src);
 	printf("The Destination String is : %s\n", dest);
+	printf("\n--ft_strcmp--\n\n");
+	printf("The String Comparison Result Between Two Strings is : %d\n", ft_strcmp(s1, s2)); 
 
        return (0);
 }       
