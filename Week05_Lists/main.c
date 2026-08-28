@@ -35,9 +35,6 @@ int	main(void)
 	}
 	printf("\n\n--ft_lstsize--\n");
 	printf("Node Counts : %d\n", counter);
-	free(node_1);
-	free(node_2);
-	free(node_3);
-	head = NULL;
+	ft_lstclear(&head);
 	return (0);
 }
