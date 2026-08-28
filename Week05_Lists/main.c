@@ -35,6 +35,9 @@ int	main(void)
 	}
 	printf("\n\n--ft_lstsize--\n");
 	printf("Node Counts : %d\n", counter);
+	//ft_lstclear
 	ft_lstclear(&head);
+	printf("\n\n--ft_lstclear--\n");
+	printf("HEAD after clear: %p\n", (void *)head);
 	return (0);
 }

@@ -10,6 +10,4 @@ void	ft_lstclear(t_node **head)
 		free(*head);
 		*head = temp;
 	}
-
-	head = NULL;
 }
