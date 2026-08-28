@@ -12,9 +12,10 @@ int	main(void)
 
 	free(a_node);
 
-	//ft_lstadd_front
+	//ft_lstadd_front + ft_lstsize
 	t_node *head;
 	t_node *current;
+	int	counter;
 
 	head = NULL;
 	t_node *node_1 = ft_lstnew(10);
@@ -24,6 +25,7 @@ int	main(void)
 	ft_lstadd_front(&head, node_1);
 	ft_lstadd_front(&head, node_2);
 	ft_lstadd_front(&head, node_3);
+	counter = ft_lstsize(head);
 	current = head;
 	printf("\n\n--ft_lstadd_front--\n");
 	while(current != NULL)
@@ -31,7 +33,8 @@ int	main(void)
 		printf("data : %d\n at : %p\n", current->data, (void *)current->next);
 		current = current->next;
 	}
-
+	printf("\n\n--ft_lstsize--\n");
+	printf("Node Counts : %d\n", counter);
 	free(node_1);
 	free(node_2);
 	free(node_3);
