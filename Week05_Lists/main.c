@@ -30,7 +30,7 @@ int	main(void)
 	printf("\n\n--ft_lstadd_front--\n");
 	while(current != NULL)
 	{
-		printf("data : %d\n at : %p\n", current->data, (void *)current->next);
+		printf("data : %d\n next pointer address : %p\n", current->data, (void *)current->next);
 		current = current->next;
 	}
 	printf("\n\n--ft_lstsize--\n");
